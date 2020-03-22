@@ -72,7 +72,6 @@ class DatabaseHost extends Model implements CleansAttributes, ValidableContract
      */
     protected static $dataIntegrityRules = [
         'name' => 'string|max:255',
-        'host' => 'unique:database_hosts,host',
         'port' => 'numeric|between:1,65535',
         'username' => 'string|max:32',
         'password' => 'nullable|string',
